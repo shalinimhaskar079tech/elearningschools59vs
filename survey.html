@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+
+            <h2>E-Learning CEP 📚</h2>
+
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="survey.html">Survey</a>
+                <a href="resources.html">Resources</a>
+                <a href="index.html">Logout</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Survey -->
+    <section class="survey-container">
+
+        <p class="tagline">E-LEARNING SURVEY</p>
+
+        <h1>Tell Us About Your E-Learning Experience</h1>
+
+        <p>
+            Your responses will help us understand the digital learning
+            needs and challenges in government schools.
+        </p>
+
+
+        <form id="surveyForm">
+
+            <!-- 1 -->
+            <label>1. Name</label>
+
+            <input type="text"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+
+            <!-- 2 -->
+            <label>2. Age</label>
+
+            <input type="number"
+                   name="age"
+                   placeholder="Enter your age"
+                   required>
+
+
+            <!-- 3 -->
+            <label>3. Occupation</label>
+
+            <select name="occupation" required>
+                <option value="">Select occupation</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Employee">Employee</option>
+                <option value="Others">Others</option>
+            </select>
+
+
+            <!-- 4 -->
+            <label>4. Does your school have computers or laptops?</label>
+
+            <select name="school_computers" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not sure">Not sure</option>
+            </select>
+
+
+            <!-- 5 -->
+            <label>5. Does your school have internet access?</label>
+
+            <select name="internet_access" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Limited access">Limited access</option>
+            </select>
+
+
+            <!-- 6 -->
+            <label>6. Do you have a smartphone or tablet at home?</label>
+
+            <select name="home_devices" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Shared with family">Shared with family</option>
+            </select>
+
+
+            <!-- 7 -->
+            <label>7. Are you familiar with e-learning platforms?</label>
+
+            <select name="e_learning" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Somewhat">Somewhat</option>
+            </select>
+
+
+            <!-- 8 -->
+            <label>8. Have you used DIKSHA or SWAYAM?</label>
+
+            <select name="diksha_swayam" required>
+                <option value="">Select an option</option>
+                <option value="DIKSHA">DIKSHA</option>
+                <option value="SWAYAM">SWAYAM</option>
+                <option value="Both">Both</option>
+                <option value="Neither">Neither</option>
+            </select>
+
+
+            <!-- 9 -->
+            <label>9. What type of digital content do you prefer?</label>
+
+            <select name="content_preference" required>
+                <option value="">Select an option</option>
+                <option value="Video lectures">Video lectures</option>
+                <option value="Notes / PDFs">Notes / PDFs</option>
+                <option value="Interactive quizzes">Interactive quizzes</option>
+                <option value="Animations">Animations</option>
+            </select>
+
+
+            <!-- 10 -->
+            <label>10. What is the biggest challenge you face in e-learning?</label>
+
+            <select name="e_learning_challenge" required>
+                <option value="">Select an option</option>
+                <option value="Poor internet connection">Poor internet connection</option>
+                <option value="Lack of devices">Lack of devices</option>
+                <option value="Lack of digital skills">Lack of digital skills</option>
+                <option value="Limited digital content">Limited digital content</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <!-- 11 -->
+            <label>11. How comfortable are your teachers with technology?</label>
+
+            <select name="teacher_technology" required>
+                <option value="">Select an option</option>
+                <option value="Very comfortable">Very comfortable</option>
+                <option value="Comfortable">Comfortable</option>
+                <option value="Somewhat comfortable">Somewhat comfortable</option>
+                <option value="Not comfortable">Not comfortable</option>
+            </select>
+
+
+            <!-- 12 -->
+            <label>12. Is digital learning material available for your syllabus?</label>
+
+            <select name="digital_material" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Partially">Partially</option>
+                <option value="Not sure">Not sure</option>
+            </select>
+
+
+            <!-- 13 -->
+            <label>13. Which subject needs digital learning content the most?</label>
+
+            <select name="subject_need" required>
+                <option value="">Select a subject</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <option value="Social Science">Social Science</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <!-- 14 -->
+            <label>14. Which language do you prefer for digital learning?</label>
+
+            <select name="language_preference" required>
+                <option value="">Select a language</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Other">Other</option>
+            </select>
+
+
+            <!-- 15 -->
+            <label>15. What would be the ideal duration of an educational video?</label>
+
+            <select name="video_duration" required>
+                <option value="">Select duration</option>
+                <option value="Less than 5 minutes">Less than 5 minutes</option>
+                <option value="5–10 minutes">5–10 minutes</option>
+                <option value="10–20 minutes">10–20 minutes</option>
+                <option value="More than 20 minutes">More than 20 minutes</option>
+            </select>
+
+
+            <!-- 16 -->
+            <label>16. Overall, how useful do you think e-learning is?</label>
+
+            <select name="overall_usefulness" required>
+                <option value="">Select an option</option>
+                <option value="Very useful">Very useful</option>
+                <option value="Useful">Useful</option>
+                <option value="Somewhat useful">Somewhat useful</option>
+                <option value="Not useful">Not useful</option>
+            </select>
+
+
+            <button type="submit">
+                Submit Survey
+            </button>
+
+        </form>
+
+        <p id="surveyMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        Community Engagement Project |
+        B.Sc. Information Technology
+    </footer>
+
+</body>
+
+</html>
